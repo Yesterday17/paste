@@ -6,16 +6,16 @@ This is a Cloudflare Worker that allows you to create and fetch pastes.
 
 ```bash
 # Create a paste
-sudo dmesg | curl -d @- https://paste-url.worker.dev/your-username
+sudo dmesg | curl -d @- https://paste-url.worker.dev/public
 
 # Create a paste with a custom url
-sudo dmesg | curl -d @- https://paste-url.worker.dev/your-username/dmesg-20250706
+sudo dmesg | curl -d @- https://paste-url.worker.dev/public/dmesg-20250706
 ```
 
 ## Fetch a paste
 
 ```bash
-curl https://paste-url.worker.dev/your-username/dmesg-today
+curl https://paste-url.worker.dev/public/dmesg-20250706
 ```
 
 ## Delete a paste

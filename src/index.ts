@@ -10,7 +10,6 @@ const openapi = fromHono(app, {
 });
 
 openapi.get("/:user/:pasteSlug", PasteFetch);
-openapi.post("/", PasteCreate);
 openapi.post("/:user", PasteCreate);
 openapi.post("/:user/:pasteSlug", PasteCreate);
 
